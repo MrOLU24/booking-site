@@ -12,6 +12,7 @@ const maincontents = () => {
       <section>
         <h2>Services</h2>
         <p>We offer a variety of services to meet your needs.</p>
+        <p>dfgf</p>
       </section>
     </main>
   )
