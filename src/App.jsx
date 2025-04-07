@@ -1,16 +1,18 @@
 import React from "react";
-import Header from "./Components/Header/header";
-import MainContent from "./MainContent/maincontents";
-import Footer from "./Components/Footer/footer";
+import ProductInfo from "./Components/ProductInfo";
+import Greetings from "./Components/Greetings";
+import User from "./Components/Person";
+import ProductName from "./Components/Product";
 
 const App = () => {
   return (
     <main>
-      <Header/>
-      <MainContent/>
-      <Footer/>
+      <ProductInfo />
+      <Greetings />
+      <User name="Abdul" Level="graduted" proffession="Software Eng" />
+      <ProductName name="Orange" price="$50" />
     </main>
-  )
+  );
 };
 
 export default App;
