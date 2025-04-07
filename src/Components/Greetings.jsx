@@ -1,14 +1,11 @@
 import React from "react";
 
-const Greet = "hello fam";
-const date = new Date()
-const Greetings = () => {
-  return (
-    <div>
-      <h1>{Greet.toUpperCase()}</h1>
-      <p>today date is {date.getDate()}</p>
-    </div>
+function Greetings(TimeOfDay) {
+  return TimeOfDay === "afternoon" ? (
+    <h1>Good Afternoon</h1>
+  ) : (
+    <h1>Good morning</h1>
   );
-};
+}
 
 export default Greetings;
