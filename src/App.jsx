@@ -1,16 +1,13 @@
-import React from "react";
-import Greetings from "./Components/Greetings";
+import React, { useState } from "react";
+import Addone from "./Components/Addone";
+import Addtwo from "./Components/Addtwo";
 
 const App = () => {
+  const [count, setCount] = useState(0);
   return (
     <main>
-      {/* <ProductInfo />
-      <Greetings />
-      <User name="Abdul" Level="graduted" proffession="Software Eng" />
-      <ProductName name="Orange" price="$50" /> */}
-      {/* <Weather/> */}
-      {/* <UserStatus isloggedIn={true} isAdmin={true} /> */}
-      <Greetings TimeOfDay="morning"/>
+      <Addone count={count} handler={() => setCount(count + 1)} />
+      <Addtwo count={count} handler={() => setCount(count + 1)}/>
     </main>
   );
 };
