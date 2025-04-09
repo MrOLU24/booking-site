@@ -1,13 +1,14 @@
-import React from "react";
 
-const Addtwo = ({ count, handler }) => {
-  const handleclick = () => handler();
-  return (
-    <div>
-      <p>{count}</p>
-      <button onClick={handleclick}>increment</button>
-    </div>
-  );
-};
-
-export default Addtwo;
+const Addtwo = ({ count, setCount}) => {
+    const handleClick = () => setCount(count - 1);
+  
+    return (
+      <div>
+        <h2>{count}</h2>
+        <button onClick={handleClick}>Increment -</button>
+      </div>
+    );
+  };
+  
+  export default Addtwo;
+  

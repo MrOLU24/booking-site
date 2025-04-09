@@ -1,11 +1,10 @@
-import React from "react";
+const Addone = ({ counter, setCounter }) => {
+  const handleClick = () => setCounter(counter + 1);
 
-const Addone = ({count, handler}) => {
-  const handlerclick = () => handler();
   return (
     <div>
-      <p>{count}</p>
-      <button onClick={handlerclick}>increment</button>
+      <h2>{counter}</h2>
+      <button onClick={handleClick}>Increment +</button>
     </div>
   );
 };
